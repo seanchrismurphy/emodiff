@@ -1,0 +1,17 @@
+Package: emodiff
+Type: Package
+Title: Calculate emotion differentiation measures
+Version: 0.1.0
+Authors@R:  c(
+    person("Murphy", "Sean", email = "sean.murphy@voconiq.com", role = c('aut', "cre")),
+    person("Kalokeronis", "Elise", email = "elise.kalokerinos@unimelb.edu.au", role = c("aut")))
+Description: Contains a single function that calculates three differention emotion differentiation
+ indices and their inverses, for use on momentary assessment data of emotion.
+Depends: R (>= 4.0.0)
+Imports:
+    dplyr,
+    psych
+License: MIT
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.1
