@@ -23,5 +23,5 @@ calculates momentary emotional differentiation, classic emotion differentiation,
 their inverses
 }
 \examples{
-`calculate_ed(dat = data, emotions = c("happy","sad","anxious"), PID)`
+calculate_ed(dat = emo_ex, emotions = c("happy","relaxed","cheerful"), id)
 }

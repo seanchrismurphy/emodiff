@@ -7,7 +7,7 @@ Authors@R:  c(
     person("Kalokeronis", "Elise", email = "elise.kalokerinos@unimelb.edu.au", role = c("aut")))
 Description: Contains a single function that calculates three differention emotion differentiation
  indices and their inverses, for use on momentary assessment data of emotion.
-Depends: R (>= 4.0.0)
+Depends: R (>= 4.0.0), dplyr
 Imports:
     dplyr,
     psych

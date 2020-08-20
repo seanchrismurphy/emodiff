@@ -12,7 +12,7 @@
 #' a person ID, if you want to calculate scores for each individual within each wave.
 #'
 #' @examples
-#' `calculate_ed(dat = data, emotions = c("happy","sad","anxious"), PID)`
+#' calculate_ed(dat = emo_ex, emotions = c("happy","relaxed","cheerful"), id)
 
 calculate_ed <- function(dat, emotions, ...) {
 
@@ -33,7 +33,7 @@ calculate_ed <- function(dat, emotions, ...) {
           # Calculate emotional variance
           m_emo_var = sum(diag(var(x[, emotions]))),
           # Calculate classic (non) ED
-          c_nonED = ICC(x[emotions], missing = TRUE, lmer = F)$results[6, 2]
+          c_nonED = psych::ICC(x[emotions], missing = TRUE, lmer = F)$results[6, 2]
 
     )) %>%
     do.call('rbind', .)
