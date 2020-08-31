@@ -7,7 +7,7 @@ The emodiff package contains a single function that calculates three differentio
 ## Use
 You'll first want to install R and Rstudio (see [here](https://www.researchgate.net/publication/316678011_A_Psychologist's_Guide_to_R]) for a quick walkthrough of that process, which is quite simple.)
 
-Once you have RStudio installed and open, using the cleansema package is simple. The first time you want to use it, you'll need to run the following code to install it. Paste this code into the command line of RStudio and hit run:
+Once you have RStudio installed and open, using the emodiff package is simple. The first time you want to use it, you'll need to run the following code to install it. Paste this code into the command line of RStudio and hit run:
 
 ```
 install.packages('devtools')
