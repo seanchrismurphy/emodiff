@@ -64,7 +64,7 @@ calculate_ed <- function(dat, emotions, ..., allow_neg_icc = FALSE, fisher_trans
   if (!allow_neg_icc) {
     # Set all measures of emotion differentiation to NA if the c_ED is negative
     c_dat <- c_dat %>% mutate(across(c('m_nonED', 'm_ED', 'c_nonED', 'c_ED', 'L2_nonED', 'L2_ED'),
-                                     function(x) ifelse(c_ED < 0, NA, x)))
+                                     function(x) ifelse(c_nonED < 0, NA, x)))
   }
 
 
